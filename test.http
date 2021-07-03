@@ -1,0 +1,26 @@
+# USED BY "REST CLIENT" EXTENSION
+
+### GET ALL ITEMS
+GET http://localhost:4848/products HTTP/1.1
+
+### GET SINGLE ITEM
+GET http://localhost:4848/products/2 HTTP/1.1
+
+### ADD ITEM
+POST http://localhost:4848/products HTTP/1.1
+content-type: application/json; charset=utf-8
+
+{  
+  "name": "Product Example"
+}
+
+### DELETE ITEM
+DELETE http://localhost:4848/products/1 HTTP/1.1
+
+### UPDATE ITEM
+PUT http://localhost:4848/products/2 HTTP/1.1
+content-type: application/json; charset=utf-8
+
+{  
+  "name": "This one has been updated!"
+}
